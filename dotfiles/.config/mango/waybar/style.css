@@ -1,0 +1,215 @@
+* {
+  border: none;
+  font-family: JetBrains Mono Nerd Font;
+  font-weight: 600;
+  font-size: 14px;
+  min-height: 0;
+  border-radius: 25;
+}
+window#waybar {
+  background: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+tooltip {
+  background: rgba(30, 31, 41, 230);
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #6272a4;
+  color: #f8f8f2;
+}
+
+/* Main modules */
+#language,
+#custom-updates,
+#custom-weather,
+#window,
+#taskbar,
+#tags,
+#battery,
+#workspaces,
+#custom-playerctl,
+#clock,
+#battery,
+#pulseaudio,
+#cpu,
+#temperature,
+#backlight,
+#network,
+#workspaces,
+#tray,
+#cava,
+#keyboard-state,
+#custom-notification,
+#custom-power {
+  background: none;
+  padding: 0px 10px;
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+/* Workspaces */
+#workspaces {
+  /*border-radius: 25px;*/
+  border-width: 2px;
+  border-style: solid;
+  border-color: #6272a4;
+  margin-left: 4px;
+  padding-left: 10px;
+  padding-right: 6px;
+  background: rgba(40, 42, 54, 0.95);
+}
+
+#workspaces button {
+  border: none;
+  background: none;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: #f8f8f2;
+  padding: 1px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+#workspaces button.hidden {
+  color: #6272a4;
+  background-color: transparent;
+}
+
+#workspaces button.visible {
+  color: #6272a4;
+}
+
+#workspaces button:hover {
+  color: #ff79c6;
+}
+
+#workspaces button.active {
+  background-color: #44475a;
+  color: #bd93f9;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+#workspaces button.urgent {
+  background-color: #ff5555;
+  color: #282a36;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+/* Tags */
+#tags {
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #bd93f9;
+  margin-left: 4px;
+  padding-left: 10px;
+  padding-right: 6px;
+  background: rgba(40, 42, 54, 0.95);
+}
+
+#tags button {
+  border: none;
+  background: none;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: #6272a4;
+  padding: 1px;
+  margin-right: 4px;
+}
+
+#tags button.occupied,
+#tags button.overview {
+  color: #f8f8f2;
+}
+
+#tags button:hover {
+  color: #ffb86c;
+}
+
+#tags button.focused {
+  background-color: #bd93f9;
+  color: #282a36;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+#tags button.urgent {
+  background-color: #ff5555;
+  color: #282a36;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+/* Generic modules background */
+#tray,
+#network,
+#language,
+#custom-updates,
+#window,
+#taskbar,
+#custom-playerctl,
+#cava,
+#clock,
+#pulseaudio,
+#cpu,
+#temperature,
+#backlight,
+#battery,
+#custom-weather,
+#custom-notification,
+#custom-power {
+  background: rgba(40, 42, 54, 0.95);
+  color: #f8f8f2;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #44475a;
+}
+
+/* Taskbar states */
+#taskbar button.minimized {
+  background-color: #ffb86c;
+  color: #282a36;
+  border-radius: 3px;
+}
+
+#taskbar button.urgent {
+  background-color: #ff5555;
+  color: #282a36;
+  border-radius: 3px;
+}
+
+#taskbar button.active {
+  background-color: #bd93f9;
+  color: #282a36;
+  border-radius: 3px;
+}
+
+/* Menu */
+menu {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #6272a4;
+  background: rgba(40, 42, 54, 0.95);
+  border-radius: 10px;
+}
+
+menuitem:focus label,
+menuitem:hover label {
+  color: #282a36;
+  background: #bd93f9;
+}
+
+menuitem:focus,
+menuitem:hover {
+  background: #bd93f9;
+}
