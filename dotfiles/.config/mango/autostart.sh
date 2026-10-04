@@ -6,13 +6,13 @@ set +e
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots >/dev/null 2>&1
 
 # notify
-swaync -c ~/.config/mango/swaync/config.jsonc -s ~/.config/mango/swaync/style.css >/dev/null 2>&1 &
+swaync
 
 # wallpaper
 swaybg -i ~/.config/mango/wallpapers/dracula-mnt-282a36.png >/dev/null 2>&1 &
 
 # top bar
-waybar -c ~/.config/mango/waybar/config.jsonc -s ~/.config/mango/waybar/style.css >/dev/null 2>&1 &
+waybar
 
 # xwayland dpi scale
 echo "Xft.dpi: 140" | xrdb -merge #dpi缩放
